@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/galery/class.css">
+    <link rel="stylesheet" href="/assets/bookStore/table.css">
+</head>
+
+<body>
+    <header>
+        <section class="d_flex align_items_center justify_content_space_between">
+            <!-- Menu -->
+            <nav class="menu d_mobile_none">
+                <ul class="d_flex gap_1 p_1">
+                    <li><a href="">خانه</a></li>
+                    <li><a href="">محصولات ما</a></li>
+                    <li><a href="">تماس با ما</a></li>
+                    <li><a href="">درباره ما</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile Menu -->
+            <details class="mobile_d d_desktap_none">
+                <summary>
+                    <img width="50px" src="https://img.icons8.com/fluency/48/menu--v2.png" alt="menu--v2" />
+                </summary>
+
+                <ul class="mobil_menu_list rounded_1 p_4 p_absolute right_2 z_index_1 text_align_justify">
+                    <li class=""><a href="#">خانه</a></li>
+                    <li class="mt_2"><a href="#">محصولات ما</a></li>
+                    <li class="mt_2"><a href="#">تماس با ما</a></li>
+                    <li class="mt_2"><a href="#">درباره ما</a></li>
+                </ul>
+
+            </details>
+            <!-- logo Section -->
+            <div class="logo-section">
+                <img width="48" height="48" src="https://img.icons8.com/color/48/shopping-cart-loaded.png"
+                    alt="shopping-cart-loaded" />
+            </div>
+        </section>
+    </header>
+    <main class="p_relative">
+        <!-- main background -->
+        <img class="bacgroundImgMain w_100 h_100 p_absolute top_0 left_0 z_index_-1"
+            src="/assets/images/picture1pink.jpeg">
+        <!-- table section -->
+        <section class="tableSection w_100 d_flex justify_content_center align_items_center">
+            <table>
+                <!-- head of table -->
+                <thead>
+                    <tr>
+                        <th>نام محوصول</th>
+                        <th>قیمت</th>
+                        <th>تصویر</th>
+                        <th>تعداد</th>
+                    </tr>
+                </thead>
+                <!-- body of talbe -->
+                <tbody>
+                    <tr>
+                        <td>مرور سریع فیزیک کنکور</td>
+                        <td>98,000</td>
+                        <td>
+                            <a href="#product1">
+                                <img class="w_3" src="/assets/images/table/fizik.jpg" alt="">
+                            </a>
+                        </td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>مرور سریع شیمی کنکور مفاهیم</td>
+                        <td>98,000</td>
+                        <td>
+                            <a href="#product2">
+                                <img class="w_3" src="/assets/images/table/shimi.jpg" alt="">
+                            </a>
+                        </td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>مرور سریع شیمی کنکور مسائل</td>
+                        <td>98,000</td>
+                        <td>
+                            <a href="#product3">
+                                <img class="w_3" src="/assets/images/table/shimiq.jpg" alt="">
+                            </a>
+                        </td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+                <!-- foot of table -->
+                <tfoot>
+                    <tr>
+                        <td colspan="3">جمع کل</td>
+                        <td>30</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <!-- show targets -->
+        <div id="product1"
+            class="productModal1 d_flex justify_content_center align_items_center p_absolute w_100 h_100 top_0 left_0">
+            <img class="productsImg" src="/assets/images/table/fizik.jpg" alt="">
+            <a href="#">
+                <img class="moltipic p_absolute top_0 left_0 p_2" width="20px"
+                    src="https://img.icons8.com/sf-regular-filled/48/FFFFFF/multiply.png" alt="multiply" />
+            </a>
+        </div>
+        <div id="product2"
+            class="productModal2 d_flex justify_content_center align_items_center p_absolute w_100 h_100 top_0 left_0">
+            <img class="productsImg" src="/assets/images/table/shimi.jpg" alt="">
+            <a href="#">
+                <img class="moltipic p_absolute top_0 left_0 p_2" width="20"
+                    src="https://img.icons8.com/sf-regular-filled/48/FFFFFF/multiply.png" alt="multiply" />
+            </a>
+        </div>
+        <div id="product3"
+            class="productModal3 d_flex justify_content_center align_items_center p_absolute w_100 h_100 top_0 left_0">
+            <img class="productsImg" src="/assets/images/table/shimiq.jpg" alt="">
+            <a href="#">
+                <img class="moltipic p_absolute top_0 left_0 p_2" width="20"
+                    src="https://img.icons8.com/sf-regular-filled/48/FFFFFF/multiply.png" alt="multiply" />
+            </a>
+        </div>
+    </main>
+    <footer>
+        <i>تمامی حقوق محفوظ است &copy2025 </i>
+    </footer>
+</body>
+
+</html>

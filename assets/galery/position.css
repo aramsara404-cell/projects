@@ -1,0 +1,86 @@
+body{
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    border: 1px ridge violet;
+    font-style: oblique;
+    color: rgb(193, 8, 193);
+    background-color: rgba(235, 119, 206, 0.315);
+}
+
+.logoBox {
+    width: 4rem;
+}
+
+.fixed{
+    background-color: chartreuse;
+    border-radius: 100px;
+    right: 10px;
+    bottom: 20px;
+    position: fixed;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 6, 58);
+}
+.spacer{
+    width: 70%;
+    text-align: justify;
+    color: rgb(100, 86, 86);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    border: .5px solid rgb(0, 195, 255);
+    padding: .5rem;
+}
+
+h1 {
+    text-shadow: 7px 7px 5px #33232e;
+    color: #f721a3;
+}
+
+
+.modalBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100dvh;
+    background-color: rgb(201, 225, 245);
+    transition: all .5s;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.modalBox:target {
+    width: 80%;
+    opacity: 1;
+}
+
+.returnLogo {
+    width: 3rem;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}

@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section {
+    height: 98%;
+    width: 450px;
+}
+
+p {
+    font-style: italic;
+    color: rgb(1, 60, 60);
+    font-weight: 800;
+    /* padding: 0px 173px 0px 11px;   */
+}
+
+.formsection {
+    border: 5px dotted rgb(211, 20, 244);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(0, 204, 255) inset;
+}
+
+span {
+    color: rgb(255, 0, 123);
+}
+
+.formsection h1 {
+    font-size: 40px;
+    padding-left: 25px;
+    margin-top: 10px;
+    text-align: initial;
+    background: linear-gradient(to right, rgba(23, 135, 255, 0.783), rgb(11, 2, 79));
+    background-clip: text;
+    color: transparent;
+}
+
+.nameBox {
+    text-align: center;
+}
+
+.halfName {
+    width: 45%;
+    display: inline-block;
+}
+
+.halfName input {
+    width: 90%;
+}
+
+label {
+    font-style: italic;
+    color: rgb(1, 60, 60);
+    font-weight: 800;
+    padding: 0 20px 20px 0;
+}
+
+.inputBox {
+    margin-top: .5rem;
+}
+
+input {
+    height: 46px;
+border-radius: 10px;
+background: linear-gradient(to right, rgba(255, 167, 0, 0.68), rgba(249, 24, 219, 0.68));
+box-shadow: 5px 5px 10px #62a3f782;
+border: none;
+}
+
+.informations input {
+    width: 90%;
+}
+
+.informations label {
+    text-align: justify;
+}
+
+.checkBox input {
+    box-shadow: 0 0 10px rgb(255, 0, 204);
+}
+
+.checkBox label {
+    position: relative;
+    bottom: 20px;
+
+}
+
+.submitBtn {
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(255, 84, 0, 0.68), rgba(255, 0, 131, 0.68));width: 80%;
+    font-style: italic;
+    color: rgb(1, 60, 60);
+    font-weight: 800;
+    font-size: 20px;
+    border: none;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: red;
+}
+
+button:active {
+    box-shadow: 0 0 20px rgb(8, 5, 5);
+}
+
+.galerysection {
+    background-color: rgb(219, 155, 155);
+    border: 2px dotted red;
+}
+
+.images {
+    width: 100%;
+    height: 22%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 215, 0);
+    object-fit: cover; 
+    margin-top: .5rem;
+}
+
+.picturWithLessHight{
+    height: 11rem;
+}
+
+.picturWithMoreHight {
+   height: 12rem;
+}
+
+.parts {
+    height: 100%;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+}
+
+.title {
+    color: rgb(102, 39, 2);
+    text-shadow: 10px 10px 20px #ffcb00;
+    font-style: italic;
+    display: inline;
+}
+
+input {
+    padding-inline: 2rem;
+    font-style: italic;
+    color: rgb(1, 60, 60);
+    font-weight: 800;
+}
+
+.modal {
+    border-radius: .5rem;
+    padding: 1rem;
+    background-color: white;
+    background: radial-gradient(top right, yellow, white);
+    min-width: 300px;
+    max-width: 50%;
+    width: 100vw;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    transition: all .5s;
+    z-index: 10;
+}
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.308);
+    z-index: 9;
+    transition: all 1s;
+}
+
+@media (max-width: 468px) {
+    section {
+        width: 100% !important;
+        display: inline-block !important;
+    }
+
+}
