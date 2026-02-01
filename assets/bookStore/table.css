@@ -69,6 +69,12 @@ a {
 main {
     display: flex;
     flex: 1;
+    background-image: url(/assets/images/Hydrangeas.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    /* backdrop-filter:; */
+    background-blend-mode: overlay;
+    background-color:#2480778a;
 }
 
 /* styles about table */

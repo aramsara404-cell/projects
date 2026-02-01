@@ -37,7 +37,7 @@ form.addEventListener("submit", function(e) {
         }else {
             modal.innerHTML = `
             <h3>Dear ${newperson.name} You Sign Up Successfully</h3>
-            <p>name: ${newperson.name}
+            <p>name: ${newperson.name},
             lastname: ${newperson.family} <br>
             email: ${newperson.email}</p>
             <a href="/assets/galery/store.html">
@@ -62,9 +62,10 @@ form.addEventListener("submit", function(e) {
 
 
     // const userName = document.getElementById("userName")
-    // userName.innerHTML = `${nameInput}. ${familyInput}`
-
+    
 })
+let userPannel = document.getElementById("userPannel")
+userPannel.innerHTML = `<p>${nameInput}. ${familyInput}</p>`
 
 // overlay.addEventListener("click", ()=> {
 //     overlay.style.opacity = "0"
