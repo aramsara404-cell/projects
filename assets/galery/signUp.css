@@ -183,6 +183,17 @@ input {
     transition: all 1s;
 }
 
+.okBtn {
+    padding: .5rem;
+    padding-inline: 1rem;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(32, 68, 226);
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
 @media (max-width: 468px) {
     section {
         width: 100% !important;

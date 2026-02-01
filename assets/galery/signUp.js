@@ -21,30 +21,42 @@ form.addEventListener("submit", function(e) {
         email: emailInput.value.trim(),
         email2: repeatEmailInput.value.trim(),
         password: passwordInput.value.trim(),
-        password2: repeatPasswordInput.value.trim()
+        password2: repeatPasswordInput.value.trim(),
+        checkbox: checkboxInput.value
     }
+   
 
-    if (!newperson.name ||!newperson.family || !newperson.email) {
-        alert("pleas enter required filds!")
+    if (!newperson.name ||!newperson.family 
+        || !newperson.email
+        || !newperson.password 
+        || !newperson.checkbox) {
+        alert("pleas enter all filds!")
     }else {
-        modal.innerHTML = `
-        <h3>Dear ${newperson.name} You Sign Up Successfully</h3>
-        <p>name: ${newperson.name}
-        lastname: ${newperson.family}
-        email: ${newperson.email}</p>
-        `
-        setTimeout(()=> {
-
+        if( newperson.email !== newperson.email2 || newperson.password !== newperson.password2 ) {
+            alert("pleas confirm your email or password correctly !")
+        }else {
+            modal.innerHTML = `
+            <h3>Dear ${newperson.name} You Sign Up Successfully</h3>
+            <p>name: ${newperson.name}
+            lastname: ${newperson.family} <br>
+            email: ${newperson.email}</p>
+            <a href="/assets/galery/store.html">
+                <button class="okBtn">Ok</button>
+            </a>
+            `
+    
             overlay.style.opacity = "1"
             overlay.style.visibility = "visible"
             modal.style.opacity = "1"
             modal.style.visibility = "visible"
-        
-        }, 3000)
+            
+            people.push(newperson)
+            form.reset()
+        }
     }
 
-    people.push(newperson)
-    form.reset()
+    
+    
 
     console.log(people);
 
@@ -54,10 +66,10 @@ form.addEventListener("submit", function(e) {
 
 })
 
-overlay.addEventListener("click", ()=> {
-    overlay.style.opacity = "0"
-    overlay.style.visibility = "hidden"
-    modal.style.opacity = "0"
-    modal.style.visibility = "hidden"
+// overlay.addEventListener("click", ()=> {
+//     overlay.style.opacity = "0"
+//     overlay.style.visibility = "hidden"
+//     modal.style.opacity = "0"
+//     modal.style.visibility = "hidden"
  
-})
+// })
