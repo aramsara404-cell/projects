@@ -6,20 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>a developer</title>
     <link rel="stylesheet" href="/assets/galery/class.css">
+    <link rel="stylesheet" href="/assets/galery/introduce.css">
 </head>
-<body>
+<body dir="rtl">
     <header>
         <div class="logoBox w_6" onclick="enterOrSign()">
             
         </div>
         <div class="information">
-            <label id="identity" for="">مشخصات</label>
-            <label for="">مهارت ها</label>
-            <label for="">تجربیات</label>
+            <label onclick="showIdentity()">مشخصات</label>
+            <label onclick="showSkills()">مهارت ها</label>
+            <label onclick="showExperiences()">تجربیات</label>
+            <label onclick="showProjects()">پروژه ها</label>
+            <label onclick="showNumber()">تماس با ما</label>
             
         </div>
         <div class="modal" id="modal"></div>
         <div class="overlay" id="overlay"></div>
     </header>
+    <main>
+        <section class="d_flex align_items_center justify_content_space_around">
+            <!-- My name and major -->
+            <div class="nameBox">
+                <h1 class="">سارا آرام</h1>
+                <h2 class="">یه فرانت اند با ذوق</h2>
+                <a href="#about">
+                    <button class="btn text_blod text_2 mt_2 p_inline_2 p_1 rounded_1 border_none pointer">
+                        <span>درباره</span>
+                    </button>
+
+                </a>
+            </div>
+            <!-- My profile Image -->
+            <div class="imageBox w_50">
+                <img src="/assets/images/5.jpg" class="w_100 h_100 rounded_100 object_fit_cover" alt="">
+            </div>
+        </section>
+        <div class="aboutBox p_fixed w_60" id="about">
+            <div class="p_absolute top_2 right_2 w_3">
+                <a href="#">*</a>
+            </div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus <br>blanditiis pariatur minus porro in? Atque provident eveniet quasi, delectus similique amet quo, adipisci enim<br> dolor nesciunt reprehenderit aperiam? Optio, architecto?
+        </div>
+    </main>
+    <footer>
+        <i>تمام حقوق محفوظ است</i>
+    </footer>
+    <script src="/assets/galery/introduce.js"></script>
 </body>
 </html>

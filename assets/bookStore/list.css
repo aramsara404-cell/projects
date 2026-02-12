@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+header, footer{
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 2;
+    background: linear-gradient(to right, rgb(0, 247, 255), rgb(55, 0, 255));
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+main {}
+
+.listItemBase {
+    width: 100%;
+    height: 10rem;
+    margin-top: 1rem;
+    box-shadow: 0 0 5px #8ea29f;
+}
+
+.internalList {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.listItemInternal {
+    width: 25%;
+    height: 100%;
+    vertical-align: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productShowBox {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(36, 35, 35, 0.445);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #25252577;
+    z-index: 9;
+    transition: all 1s;
+
+}
+
+.producModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    width: 20%;
+}
+
+.productImg {
+    width: 20%;
+}
+
+#productModal1:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#productModal2:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#productModal3:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+progress {
+    color: #00ffc3;
+    background: #aef0d1;
+    border: 1px solid #0028ff;
+    border-radius: 1rem;
+}
+
+.star {
+    color: #ffbf00;
+}
+
+h3, span, a {
+    color: #045744;
+    text-shadow: 10px 10px 8px #2c7d07;
+}
+
+a:active {
+    color: rgb(3, 9, 85);
+}
+
+.btn {
+    background-color: #FF9729;
+    box-shadow: 10px 10px 10px #bcced0;
+    transition: all .3s;
+}
+
+.btn:hover {
+    background-color: #ff5e00;
+    transform: translate(1rem, 1rem);
+}
