@@ -66,3 +66,12 @@ function handleShowModal() {
     overlay.style.opacity = "1"
     overlay.style.visibility = "visible"
 }
+
+const major = document.getElementById("title")
+setInterval (()=>{
+    major.style.color = "#f7ce47"
+}, 1000)
+
+setTimeout(()=> {
+    clearInterval
+},5000)

@@ -110,6 +110,13 @@ main {}
     opacity: 1;
     visibility: visible;
 }
+h1 {
+    transition: all 1s;
+    cursor: pointer;
+}
+ h1:hover {
+    background: linear-gradient(to right, rgb(229, 255, 0), rgb(9, 255, 0));
+}
 
 progress {
     color: #00ffc3;
@@ -135,6 +142,7 @@ a:active {
     background-color: #FF9729;
     box-shadow: 10px 10px 10px #bcced0;
     transition: all .3s;
+    cursor: pointer;
 }
 
 .btn:hover {
